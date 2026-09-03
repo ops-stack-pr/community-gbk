@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -405,6 +406,15 @@
         lblRatings: "Ratings",
         lblMembers: "Number of Members",
         lblLocation: "Usual Playing Location",
+        phFbCommunityName: "e.g. GBK Runners",
+        phFbContact: "WhatsApp / Phone Number",
+        phFbIg: "@username",
+        phFbFeedback: "Tell us your suggestions or experience...",
+        phInfoCommunityName: "e.g. GBK Basketball Club",
+        phInfoContactPic: "WhatsApp / Phone Number",
+        phInfoIg: "@username",
+        phInfoMembers: "Approximate total members",
+        phInfoLocation: "e.g. Plaza Sudirman / Plaza Parkir Timur",
         btnFbSubmit: "Submit Feedback",
         btnInfoSubmit: "Register Community",
         msgSuccessFb: "Thank you! Your feedback has been recorded.",
@@ -424,6 +434,15 @@
         lblRatings: "Penilaian",
         lblMembers: "Jumlah Anggota",
         lblLocation: "Lokasi Kegiatan / Main",
+        phFbCommunityName: "contoh: GBK Runners",
+        phFbContact: "Nomor WhatsApp / HP",
+        phFbIg: "@username",
+        phFbFeedback: "Tuliskan saran atau pengalamanmu...",
+        phInfoCommunityName: "contoh: GBK Basketball Club",
+        phInfoContactPic: "Nomor WhatsApp / HP",
+        phInfoIg: "@username",
+        phInfoMembers: "Perkiraan jumlah anggota",
+        phInfoLocation: "contoh: Plaza Sudirman / Plaza Parkir Timur",
         btnFbSubmit: "Kirim Masukan",
         btnInfoSubmit: "Daftarkan Komunitas",
         msgSuccessFb: "Terima kasih! Masukan Anda telah berhasil dicatat.",
@@ -450,6 +469,7 @@
       document.getElementById('txtFbHeadline').innerHTML = d.fbHeadline;
       document.getElementById('txtInfoHeadline').innerHTML = d.infoHeadline;
       
+      // Labels
       document.getElementById('lblFbCommunityName').innerText = d.lblCommunityName;
       document.getElementById('lblFbContact').innerText = d.lblContact;
       document.getElementById('lblFbIg').innerText = d.lblIg;
@@ -463,6 +483,18 @@
       document.getElementById('lblInfoMembers').innerText = d.lblMembers;
       document.getElementById('lblInfoLocation').innerText = d.lblLocation;
       document.getElementById('info_btn').innerText = d.btnInfoSubmit;
+
+      // Input Placeholders
+      document.getElementById('fb_communityName').placeholder = d.phFbCommunityName;
+      document.getElementById('fb_contact').placeholder = d.phFbContact;
+      document.getElementById('fb_instagram').placeholder = d.phFbIg;
+      document.getElementById('fb_feedback').placeholder = d.phFbFeedback;
+
+      document.getElementById('info_communityName').placeholder = d.phInfoCommunityName;
+      document.getElementById('info_contactPic').placeholder = d.phInfoContactPic;
+      document.getElementById('info_instagram').placeholder = d.phInfoIg;
+      document.getElementById('info_members').placeholder = d.phInfoMembers;
+      document.getElementById('info_playingLocation').placeholder = d.phInfoLocation;
 
       document.getElementById('langToggleBtn').innerText = currentLang.toUpperCase() === 'EN' ? '🌐 ID' : '🌐 EN';
     }
