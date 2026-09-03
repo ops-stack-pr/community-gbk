@@ -42,6 +42,14 @@
       border-bottom: 4px solid var(--gbk-red);
     }
 
+    /* Centered Small GBK Logo */
+    .gbk-logo {
+      display: block;
+      margin: 0 auto 12px auto;
+      height: 48px;
+      width: auto;
+    }
+
     .brand-tag {
       display: inline-block;
       background: var(--gbk-red);
@@ -169,6 +177,7 @@
 
   <div class="container">
     <div class="brand-header">
+      <img src="logo white gbk.svg" alt="GBK Logo" class="gbk-logo">
       <span class="brand-tag">#GBKUntukSemua</span>
       <h1>Community Hub</h1>
     </div>
@@ -307,7 +316,7 @@
       btn.disabled = true;
 
       const payload = {
-        type: "database", //
+        type: "database",
         communityName: document.getElementById('info_communityName').value,
         contactPic: document.getElementById('info_contactPic').value,
         instagram: document.getElementById('info_instagram').value,
